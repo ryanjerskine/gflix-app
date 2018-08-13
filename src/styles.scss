@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+$primary: mat-palette($mat-red, 800);
+$accent: mat-palette($mat-light-blue, 600, 100, 800);
+$warn: mat-palette($mat-red, 600);
+$theme: mat-dark-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+
+@import '~swiper/dist/css/swiper.min.css';
+
+// Remove blue outline on buttons
+button:focus {
+    outline:0;
+}
+.bg-red {
+    background-color: #eb473d!important;
+}
+.border-red {
+    border-color: #eb473d!important;
+}
+.cdk-overlay-container {
+    z-index: 1040;
+}
+.color-grey {
+    color: grey;
+}

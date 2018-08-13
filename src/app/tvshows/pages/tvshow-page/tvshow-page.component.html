@@ -1,0 +1,46 @@
+<app-page>
+  <div class="row">
+    <div class="col-3">
+      <img src="{{tvshow?.PosterUrl}}" class="w-100">
+    </div>
+    <div class="col-9">
+      <h3>{{tvshow?.Title}}</h3>
+      <p>{{tvshow?.Summary}}</p>
+      <mat-tab-group (selectedTabChange)="seasonChanged()">
+        <mat-tab *ngFor="let season of tvshow?.Seasons" [label]="'Season ' + season.Number.toString()" class="episodes-tab">
+          <div  class="row m-4">
+            <div class="episode" *ngFor="let episode of season.Episodes" #viewEpisodes>
+              <mat-card class="mb-3 p-2" [class.active]="currentEpisode === episode.Number">
+                <div class="thumbnail">
+                  <img src="{{episode.ImageUrl}}" class="w-100 h-100">
+                </div>
+                <div class="episode-title">
+                  <h4 class="mb-0">{{episode.Title}}</h4>
+                  <h6 class="color-grey mb-0">Episode {{episode.Number}}</h6>
+                </div>
+                <div class="float-right m-2">
+                  <button mat-raised-button color="primary" class="mr-3">
+                    {{episode.ProgressPercentage === 0 ? 'Play' : 'Resume'}}
+                  </button>
+                  <mat-icon class="button-episode-info" (click)="setEpisode(episode.Number)">info</mat-icon>
+                </div>
+                <div class="clearfix"></div>
+                <mat-progress-bar mode="determinate" [value]="episode.ProgressPercentage" *ngIf="episode.ProgressPercentage !== 0" class="progress"></mat-progress-bar>
+                <div class="clearfix"></div>
+                <div class="episode-details">
+                  <div class="pt-1 px-3 pb-2">
+                    <hr *ngIf="episode.ProgressPercentage === 0">
+                    <button mat-raised-button class="float-right" *ngIf="episode.ProgressPercentage !== 0">Play From Start</button>
+                    <div class="clearfix"></div>
+                    <h5>Summary</h5>
+                    <p class="mb-0">{{episode.Summary}}</p>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</app-page>

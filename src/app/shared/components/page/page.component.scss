@@ -1,0 +1,25 @@
+.page {
+    padding-top: 52px;
+}
+.sidenav-container {
+    min-height: calc(100vh - 52px);
+}
+.nav-button {
+    min-width: 0;
+}
+.nav-logo {
+    font-size: 26px;
+    margin-top: -4px;
+    color: #303030;
+}
+nav {
+    color: #303030;
+}
+.sidenav {
+    width: 300px;
+    position: fixed;
+    top: 52px;
+}
+.left-pad {
+    padding-left: calc(3rem - 15px);
+}

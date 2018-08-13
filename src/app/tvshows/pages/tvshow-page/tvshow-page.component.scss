@@ -1,0 +1,65 @@
+.episode {
+    float: left;
+    width: calc(50% - 1.01rem); // Not sure why but the .01 was needed for edge
+    margin-right: 1rem;
+}
+.episode .thumbnail {
+    float:left;
+    height:55px;
+    width: 98px;
+    border: 1px solid #303030;
+}
+.progress {
+    margin-bottom: -8px;
+    margin-top: 3px;
+    left: -.5rem;
+    width: calc(100% - -1rem);
+}
+.active .progress {
+    margin-bottom: 6px;
+    margin-top: 13px;
+    left: 1rem;
+    width: calc(100% - 2rem);
+}
+::ng-deep .mat-tab-body-content {
+    overflow: hidden!important;
+}
+.episode-title {
+    float:left;
+    padding-left:12px;
+    padding-top:4px;
+    width: calc(100% - 242px);
+}
+.episode-title > h4 {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.active .episode-title > h4 {
+    white-space: normal;
+}
+.button-episode-info {
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+    color: grey;
+}
+.button-episode-info:hover,
+.button-episode-info:active {
+    color: #a5a3a3;
+}
+.episode-details {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+}
+.active .episode-details {
+    max-height: 750px;
+    transition: max-height 0.25s ease-in;
+}
+.episode-details > div {
+    visibility: hidden;
+}
+.active .episode-details > div {
+    visibility: visible;
+}

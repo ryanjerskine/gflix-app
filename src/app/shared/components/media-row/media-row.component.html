@@ -1,0 +1,28 @@
+<div class="row" *ngIf="media.length === 0">
+  <div class="col-12">
+    <div class="color-grey pl-3">
+      {{ emptyMessage }}
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="media.length > 0">
+  <div class="col-12">
+    <div class="mx-4 mt-3">
+      <div class="swiper-container" [swiper]="config">
+        <div class="swiper-wrapper">
+          <div *ngFor="let m of media" class="swiper-slide">
+            <div class="movie-wrapper" (click)="routeToMedia(m)">
+              <img src="{{m.PosterUrl}}" class="w-100">
+              <mat-progress-bar mode="determinate" [value]="m.ProgressPercentage" *ngIf="m.ProgressPercentage !== 0"></mat-progress-bar>
+              <h6 class="mt-2 mb-0">{{ m.Title }}</h6>
+              <h6 *ngIf="m.Type === 'movie'" class="color-grey mb-0">{{ m.Year }}</h6>
+              <h6 *ngIf="m.Type === 'tv'" class="color-grey mb-0">{{ m.Subtitle }}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>

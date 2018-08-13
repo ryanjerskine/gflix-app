@@ -1,0 +1,29 @@
+{
+    "Id": 4,
+    "TMDbId": 50022,
+    "IMDBId": "tt0859635",
+    "Title": "Super Troopers 2",
+    "Year": 2018,
+    "Runtime": "1h 40min",
+    "Rating": "R",
+    "ImdbScore": "6.3",
+    "Summary": "When an international border dispute arises between the U.S. and Canada, the Super Troopers- Mac, Thorny, Foster, Rabbit and Farva, are called in to set up a new Highway Patrol station in the disputed area.",
+    "PosterUrl": "https://image.tmdb.org/t/p/original/57SZgdugVClIy22rfnANeBJ5KsN.jpg",
+    "BackdropUrl": "https://image.tmdb.org/t/p/original/lXtS4sFvOtwnFBiezzJvOMC7b9W.jpg",
+    "Watched": false,
+    "ProgressPercentage": 0,
+    "Genres": [
+        {
+            "Id": 4,
+            "Name": "Comedy"
+        },
+        {
+            "Id": 5,
+            "Name": "Crime"
+        },
+        {
+            "Id": 6,
+            "Name": "Mystery"
+        }
+    ]
+}

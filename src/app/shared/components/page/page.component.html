@@ -1,0 +1,53 @@
+<div class="page">
+  <nav class="navbar fixed-top navbar-dark bg-red">
+    <button mat-button (click)="sidenav.toggle()" class="nav-button">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="font-weight-bold font-italic nav-logo">
+      gflix
+    </span>
+    <div>
+      <button mat-button class="nav-button" [matMenuTriggerFor]="appMenu">
+        <mat-icon>person</mat-icon>
+      </button>
+      <mat-menu #appMenu="matMenu" yPosition="below" [overlapTrigger]="false">
+        <button mat-menu-item class="text-center px-4" [routerLink]="['/account']">Settings</button>
+        <button mat-menu-item class="text-center px-4">Logout</button>
+      </mat-menu>
+    </div>
+  </nav>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" class="sidenav">
+      <mat-nav-list>
+        <mat-list-item>
+          <mat-icon matListIcon>search</mat-icon>
+          <h3 mat-line>Search</h3>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/home']">
+          <mat-icon matListIcon>home</mat-icon>
+          <h3 mat-line>Home</h3>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/movies']">
+          <mat-icon matListIcon>movie</mat-icon>
+          <h3 mat-line>Movies</h3>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/tvshows']">
+          <mat-icon matListIcon>tv</mat-icon>
+          <h3 mat-line>TV Shows</h3>
+        </mat-list-item>
+        <h3 matSubheader>Actions</h3>
+        <mat-list-item>
+          <mat-icon matListIcon>swap_vert</mat-icon>
+          <h3 mat-line>Scan Library</h3>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="left-pad">
+        <div class="container-fluid pt-5">
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

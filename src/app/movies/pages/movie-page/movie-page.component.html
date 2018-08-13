@@ -1,0 +1,55 @@
+<app-page>
+  <div class="row">
+    <div class="col-xl-3 col-lg-4 col-5">
+      <img src="{{movie?.PosterUrl}}" class="img-fluid">
+      <mat-progress-bar mode="determinate" [value]="movie?.ProgressPercentage" *ngIf="movie?.ProgressPercentage > 0"></mat-progress-bar>
+    </div>
+    <div class="col-xl-9 col-lg-8 col-7">
+      <h1>{{movie?.Title}}</h1>
+      <h3 class="color-grey mb-3">{{movie?.Year}}</h3>
+      <mat-chip-list class="float-left">
+        <mat-chip class="watched-chip" (click)="toggleWatched()">
+          <span *ngIf="!movie?.Watched && movie?.ProgressPercentage === 0">Unwatched</span>
+          <span *ngIf="movie?.ProgressPercentage > 0">In Progress</span>
+          <span *ngIf="movie?.Watched">Watched</span>
+        </mat-chip>
+      </mat-chip-list>
+      <h3 class="float-right pr-4">{{movie?.Runtime}}</h3>
+      <div class="clearfix"></div>
+      <hr class="border-red mt-1">
+      <button mat-raised-button color="primary" class="play-button">
+        {{movie?.ProgressPercentage > 0 ? 'Resume' : 'Play'}}
+      </button>
+      <button mat-raised-button class="play-button" *ngIf="movie?.ProgressPercentage > 0">
+        Play From Start
+      </button>
+      <img src="../../../../assets/PG13.svg" class="rating-image">
+      <div class="imdb-rating">
+        <img src="../../../../assets/icons/imdb.png">
+        <span>{{movie?.ImdbScore}}</span>
+        <div class="clearfix"></div>
+      </div>
+      <div class="pt-3 genre-info">
+        <h5>Genres</h5>
+        <span *ngFor="let g of movie?.Genres; let isLast=last">
+          {{g.Name}}{{isLast ? '' : ', '}}
+        </span>
+      </div>
+      <div class="pt-3 movie-info">
+        <h5>Information</h5>
+        <div>Directed by: Some person</div>
+        <div>Written by: Some Other person</div>
+        <div>Studio: Paramount Studios</div>
+      </div>
+      <div class="pt-3 summary-wrapper">
+        <h5>Summary</h5>
+        {{ movie?.Summary }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <hr>
+    </div>
+  </div>
+</app-page>

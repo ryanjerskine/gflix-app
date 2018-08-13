@@ -1,0 +1,29 @@
+{
+    "Id": 1,
+    "TMDbId": 353081,
+    "IMDBId": "tt4912910",
+    "Title": "Mission: Impossible - Fallout",
+    "Year": 2018,
+    "Runtime": "2hr 28min",
+    "Rating": "PG-13",
+    "ImdbScore": "8.4",
+    "Summary": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfil his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+    "PosterUrl": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
+    "BackdropUrl": "https://image.tmdb.org/t/p/original/a9fRqsl6P27qxbDSb4pBXNv9Fwl.jpg",
+    "Watched": false,
+    "ProgressPercentage": 33,
+    "Genres": [
+        {
+            "Id": 1,
+            "Name": "Action"
+        },
+        {
+            "Id": 2,
+            "Name": "Adventure"
+        },
+        {
+            "Id": 3,
+            "Name": "Thriller"
+        }
+    ]
+}

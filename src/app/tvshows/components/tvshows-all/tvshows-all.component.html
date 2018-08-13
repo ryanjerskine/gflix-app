@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-12 pt-5">
+    <div *ngFor="let s of tvshows" class="tv-tile">
+      <div class="tv-wrapper" [routerLink]="['/tvshows', s.Id]">
+        <img src="{{s.PosterUrl}}" class="w-100">
+        <h6 class="mt-2 mb-0">{{ s.Title }}</h6>
+        <h6 class="color-grey">{{s.Subtitle}}</h6>
+      </div>
+    </div>
+  </div>
+</div>

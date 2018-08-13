@@ -1,0 +1,33 @@
+{
+    "Id": 3,
+    "TMDbId": 299536,
+    "IMDBId": "tt4154756",
+    "Title": "Avengers: Infinity War",
+    "Year": 2018,
+    "Runtime": "2hr 29min",
+    "Rating": "PG-13",
+    "ImdbScore": "8.7",
+    "Summary": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    "PosterUrl": "https://image.tmdb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "BackdropUrl": "https://image.tmdb.org/t/p/original/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
+    "Watched": false,
+    "ProgressPercentage": 0,
+    "Genres": [
+        {
+            "Id": 1,
+            "Name": "Action"
+        },
+        {
+            "Id": 2,
+            "Name": "Adventure"
+        },
+        {
+            "Id": 7,
+            "Name": "Fantasy"
+        },
+        {
+            "Id": 8,
+            "Name": "Science Fiction"
+        }
+    ]
+}

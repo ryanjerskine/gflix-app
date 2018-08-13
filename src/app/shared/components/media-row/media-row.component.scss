@@ -1,0 +1,30 @@
+.swiper-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    outline: none!important;
+}
+::ng-deep .swiper-button-prev {
+    margin-left: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z' fill%3D'%23EB473D'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+::ng-deep .swiper-button-next {
+    margin-right: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23EB473D'%2F%3E%3C%2Fsvg%3E") !important;
+}
+.movie-wrapper {
+    padding: 10px;
+    border: 2px solid transparent;
+}
+.movie-wrapper:hover {
+    border-color: #eb473d;
+    cursor: pointer;
+}
+h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

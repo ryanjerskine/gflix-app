@@ -1,0 +1,48 @@
+.summary-wrapper {
+    max-width: 800px;
+}
+.play-button {
+    min-width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.watched-chip {
+    cursor: pointer;
+}
+.watched-chip > span {
+    min-width: 100px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.rating-image {
+    float: right;
+    height: 40px;
+    width: auto;
+    margin-right: 22px;
+    opacity: .8;
+}
+.imdb-rating {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.imdb-rating > img {
+    float: left;
+    width: 65px;
+    opacity: .73;
+}
+.imdb-rating > span {
+    float: left;
+    line-height: 28px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}

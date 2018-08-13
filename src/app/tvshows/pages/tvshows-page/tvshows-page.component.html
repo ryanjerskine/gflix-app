@@ -1,0 +1,13 @@
+<app-page>
+  <div class="row">
+    <div class="col-12">
+      <mat-button-toggle-group [value]="'dashboard'" #tvToggleGroup="matButtonToggleGroup" name="tvDisplay" aria-label="TV Display" class="float-right">
+        <mat-button-toggle value="dashboard">Dashboard</mat-button-toggle>
+        <mat-button-toggle value="all">All Shows</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <app-tvshows-dashboard *ngIf="tvToggleGroup.value === 'dashboard'"></app-tvshows-dashboard>
+  <app-tvshows-all *ngIf="tvToggleGroup.value === 'all'"></app-tvshows-all>
+</app-page>
