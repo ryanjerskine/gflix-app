@@ -6,9 +6,11 @@ gflix is an Angular 6+ application that uses the [gflix-server](https://github.c
 
 The gflix-app is designed for standalone development. It has mock json files that act as a substitue for API calls. Theses files can be found in the /assets/jsonMocks directory. In order to use the json mocks, the jsonBackend property must be set to true in the enviroment.ts file (this is set to true by default). You can be up and running with:
 
+```
 git clone https://github.com/ryanjerskine/gflix-app.git
 npm install
 ng serve
+```
 
 ## Screenshots
 
