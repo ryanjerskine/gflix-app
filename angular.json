@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gdrive-flix-app": {
+    "gflix-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gdrive-flix-app",
+            "outputPath": "dist/gflix-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gdrive-flix-app:build"
+            "browserTarget": "gflix-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gdrive-flix-app:build:production"
+              "browserTarget": "gflix-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gdrive-flix-app:build"
+            "browserTarget": "gflix-app:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "gdrive-flix-app-e2e": {
+    "gflix-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gdrive-flix-app:serve"
+            "devServerTarget": "gflix-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gdrive-flix-app:serve:production"
+              "devServerTarget": "gflix-app:serve:production"
             }
           }
         },
@@ -123,7 +123,7 @@
       }
     }
   },
-  "defaultProject": "gdrive-flix-app",
+  "defaultProject": "gflix-app",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
