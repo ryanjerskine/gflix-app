@@ -1,27 +1,29 @@
-# GdriveFlixApp
+# gflix
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+gflix is an Angular 6+ application that uses the [gflix-server](https://github.com/ryanjerskine/gflix-server) to display media that is scraped from a Google Drive account. This is meant to be a Netflix/Plex/Emby clone that uses Google Drive as a backing store. See the [gflix-server](https://github.com/ryanjerskine/gflix-server) page for more details.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The gflix-app is designed for standalone development. It has mock json files that act as a substitue for API calls. Theses files can be found in the /assets/jsonMocks directory. In order to use the json mocks, the jsonBackend property must be set to true in the enviroment.ts file (this is set to true by default). You can be up and running with:
 
-## Code scaffolding
+git clone https://github.com/ryanjerskine/gflix-app.git
+npm install
+ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screenshots
 
-## Build
+Home
+![picture alt](https://i.imgur.com/6KZdaU4.png "Home")
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Movie
+![picture alt](https://i.imgur.com/Cak2i5w.png "Movie")
 
-## Running unit tests
+TV Show
+![picture alt](https://i.imgur.com/YrDACju.png "TV Show")
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Dashboard
+![picture alt](https://i.imgur.com/AdVZXQ4.png "Dashboard")
 
-## Running end-to-end tests
+## Roadmap
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+There is currently no roadmap for any of the gflix projects. I would like to start work on a swagger specification for the API. This would allow development of apps for other devices to be developed without the [gflix-server](https://github.com/ryanjerskine/gflix-server) needing to be complete.
